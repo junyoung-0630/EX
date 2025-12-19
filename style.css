@@ -7,9 +7,95 @@ img,iframe{vertical-align: top;}
 /* 문서전체 공통적으로 적용할 스타일 */
 :root{
     font-family: "Pretendard Variable";
-    font-size: 14px; line-height: 1.6; color: #333;}
+    font-size: 14px; line-height: 1.6; color: #333;
+    
+
+}
+
+header, main, footer{width: 100%;}
 
 
 
 
-.inner{max-width: 1500px; margin: 0 auto;}
+.inner{
+    max-width: 1400px; margin: 0 auto;
+    position: relative;
+}
+header .header_top{
+    display: flex; justify-content: space-between;
+    max-width: 1400px;
+    border: 1px solid #0f0;
+    margin: 0 auto;
+}
+header .inner{
+    height: 97px;
+    width: 100%;
+}
+header .full_menu{
+    width: 100%;
+    background: linear-gradient(90deg, #103a83 0%, #00667d 50%, #117a6a 100%);
+    height: 97px;
+}
+header .inner ul{
+    display: flex; justify-content: space-between;
+    font-size: 25px;
+    max-width: 1400px;
+}
+header .inner a{
+    color: #fff;
+    text-decoration: none;
+    line-height: 97px;
+    font-weight: bold;
+}
+header .inner .mega_menu{
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(90deg, #103a83 0%, #00667d 50%, #117a6a 100%);
+}
+header .inner .sub_menu{
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    z-index: 9999;
+    padding: 50px 0;
+}
+header li a:hover { color: #fff; text-decoration: underline; 
+}
+
+header .inner li:hover .mega_menu{
+    display: block;
+}
+
+
+
+
+.main_photo{
+    border: 1px solid #000;
+    width: auto;
+    height: 650px;
+    background:url(./images/Rectangle.png)
+}
+.main_photo .text_area{
+    max-width: 1400px;
+    position: relative;
+}
+.main_photo h2{
+    font-weight: bold;
+    font-size: 40px;
+    position: absolute;
+    left: 260px;
+    top: 150px;
+    color: #fff;
+    text-shadow: 1px 1px 10px #0003;
+}
+.main_photo p{
+    font-weight: right;
+    font-size: 16px;
+    position: absolute;
+    left: 260px;
+    top: 300px;
+    color: #fff;
+}
