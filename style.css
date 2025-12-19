@@ -21,6 +21,7 @@ header, main, footer{width: 100%;}
     max-width: 1400px; margin: 0 auto;
     position: relative;
 }
+header h1 img{width: 272px;}
 header .header_top{
     display: flex; justify-content: space-between;
     max-width: 1400px;
