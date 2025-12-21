@@ -77,7 +77,7 @@ header .inner li:hover .mega_menu{
 
 
 
-
+/*------------------------------------------메인메뉴상단-------------------------------------------------------------------------------------*/
 .main_photo{
     border: 1px solid #000;
     width: auto;
@@ -106,42 +106,38 @@ header .inner li:hover .mega_menu{
     top: 300px;
     color: #fff;
 }
-main .main_menu1 h2{
+/*---------------------------------main_menu1----------------------------------------------------------------------------------------------*/
+.main_menu1 h2{
     margin-bottom: 36px;
 }
-main .quick{width: 1300px;
+.main_menu1 .quick{width: 1300px;
     display: flex;
     justify-content: space-between;
     border: 1px solid #333;
     margin: 0 auto;
-
 }
-main .main_menu1 h3{
+.main_menu1 h3{
     text-align: center;
     margin-bottom: 36px;
     color: #154290;
     font-weight: bold;
     font-size: 24px;
-
 }
-main .main_menu1 .text{
+.main_menu1 .text{
     text-align: center;
     margin-top: 41px;
     font-size: 14px;
-    
-
 }
-main .main_menu1{
+.main_menu1{
     border: 1px solid #0f0;
     margin-top: 100px;
 }
-main .main_menu1 ul{
+.main_menu1 ul{
     display: flex;
     justify-content: space-between;
     gap: 189px;
-
 }
-main .main_icon{
+.main_menu1 .main_icon{
     border: 1px solid #ccc;
     border-radius: 50%;
     width: 182px;
@@ -149,4 +145,57 @@ main .main_icon{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+/*-------------------------------main_menu3------------------------------------------------------------------------------------------------*/
+.main_menu3 .menu3_image{
+    background: url(./images/Rectangle\ 121.png);
+    width: 1400px;
+    height: 650px;
+}
+.main_menu3 h3, li{
+    color: #fff;
+}
+.main3_area {
+    display: flex;
+    justify-content: space-between; 
+    padding: 50px;
+    border: 5px solid #0b691b44;
+}
+.main_menu3 .left_data{
+    display: flex;
+    width: 800px; height: 650px;
+    border: 2px solid #f33;
+    flex-wrap: wrap;
+}
+.main_menu3 .left_data h3{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.main_menu3 .main3_content{
+    border: 1px solid #fff;
+    width: 635px; height: 110px;
+    padding: 25px 40px;
+    border-radius:30px 0 30px 0;
+}
+.main_menu3 .left_content{
+    display: flex;
+}
+.main_menu3 ul{
+    display: flex;
+}
+.main_menu3 .right_data{
+    
+    border: 1px solid rgb(128, 8, 8);
+    width: 550px;
+}
+.main_menu3 .right_content{
+    border:1px solid #fff ;
+    width: 224px; height: 227px;
+    
+}
+.main_menu3 .right_content li{
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
