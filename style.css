@@ -139,7 +139,7 @@ header .inner li:hover .mega_menu{
 .main_menu1 .button3:hover .main_icon{background: url(./images/자산\ 6.png);}
 .main_menu1 .button4:hover .main_icon{background: url(./images/자산\ 7.png);}
 .main_menu1{
-    border: 1px solid #0f0;
+    outline: 2px solid #0f0;
     margin-top: 100px;
 }
 .main_menu1 ul{
@@ -159,6 +159,7 @@ header .inner li:hover .mega_menu{
 /*-------------------------------main_menu2------------------------------------------------------------------------------------------------*/
 .main_menu2{
     margin-top: 100px;
+    outline: 2px solid pink;
 }
 
 .main_menu2 .menu2_back{
@@ -201,6 +202,9 @@ header .inner li:hover .mega_menu{
 
 
 /*-------------------------------main_menu3------------------------------------------------------------------------------------------------*/
+.main_menu3{
+    outline: 2px solid yellow;
+}
 .main_menu3 .menu3_image{
     background: url(./images/Rectangle\ 121.png);
     width: 100%;
@@ -228,4 +232,26 @@ header .inner li:hover .mega_menu{
 }
 .main_menu3 .left_content{
     margin-right: 20px;
+}
+/*-------------------------------main_menu4------------------------------------------------------------------------------------------------*/
+.main_menu4{
+    outline: 2px solid saddlebrown;
+}
+
+
+
+
+
+
+/*-------------------------------main_menu5------------------------------------------------------------------------------------------------*/
+.main_menu5{
+    outline: 2px solid firebrick;
+}
+
+
+
+
+/*-------------------------------main_menu6------------------------------------------------------------------------------------------------*/
+.main_menu6{
+    outline: 2px solid indigo;
 }
