@@ -21,6 +21,12 @@ header, main, footer{width: 100%;}
     max-width: 1400px; margin: 0 auto;
     position: relative;
 }
+header h1 img{width: 272px;
+}
+header .menu_icon{display: flex;
+    gap: 10px;
+}
+header .menu_icon .menu_icon1{width: 30px;}
 header .header_top{
     display: flex; justify-content: space-between;
     max-width: 1400px;
@@ -71,7 +77,7 @@ header .inner li:hover .mega_menu{
 
 
 
-
+/*------------------------------------------메인메뉴상단-------------------------------------------------------------------------------------*/
 .main_photo{
     border: 1px solid #000;
     width: auto;
@@ -90,6 +96,7 @@ header .inner li:hover .mega_menu{
     top: 150px;
     color: #fff;
     text-shadow: 1px 1px 10px #0003;
+    
 }
 .main_photo p{
     font-weight: right;
@@ -99,3 +106,53 @@ header .inner li:hover .mega_menu{
     top: 300px;
     color: #fff;
 }
+/*---------------------------------main_menu1----------------------------------------------------------------------------------------------*/
+.main_menu1 h2{
+    margin-bottom: 36px;
+}
+.main_menu1 .quick{width: 1300px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #333;
+    margin: 0 auto;
+}
+.main_menu1 h3{
+    text-align: center;
+    margin-bottom: 36px;
+    color: #154290;
+    font-weight: bold;
+    font-size: 24px;
+}
+.main_menu1 .text{
+    text-align: center;
+    margin-top: 41px;
+    font-size: 14px;
+}
+.main_menu1{
+    border: 1px solid #0f0;
+    margin-top: 100px;
+}
+.main_menu1 ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 189px;
+}
+.main_menu1 .main_icon{
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    width: 182px;
+    height: 182px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*-------------------------------main_menu3------------------------------------------------------------------------------------------------*/
+.main_menu3 .menu3_image{
+    background: url(./images/R);
+    width: 100%;
+    height: 650px;
+}
+.main_menu3 h3, li{
+    color: #fff;
+}
+
