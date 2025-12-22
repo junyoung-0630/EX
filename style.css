@@ -128,7 +128,16 @@ header .inner li:hover .mega_menu{
     text-align: center;
     margin-top: 41px;
     font-size: 14px;
+    color: #373636;
 }
+.main_menu1 .button1:hover .main_icon{background: url(./images/자산\ 9.png);}
+.main_menu1 .button1:hover .main_icon img { opacity: 0; transition: all .5s;}
+.main_menu1 .button2:hover .main_icon img { opacity: 0; transition: all .5s;}
+.main_menu1 .button3:hover .main_icon img { opacity: 0; transition: all .5s;}
+.main_menu1 .button4:hover .main_icon img { opacity: 0; transition: all .5s;}
+.main_menu1 .button2:hover .main_icon{background: url(./images/자산\ 8.png);}
+.main_menu1 .button3:hover .main_icon{background: url(./images/자산\ 6.png);}
+.main_menu1 .button4:hover .main_icon{background: url(./images/자산\ 7.png);}
 .main_menu1{
     border: 1px solid #0f0;
     margin-top: 100px;
@@ -147,12 +156,76 @@ header .inner li:hover .mega_menu{
     justify-content: center;
     align-items: center;
 }
+/*-------------------------------main_menu2------------------------------------------------------------------------------------------------*/
+.main_menu2{
+    margin-top: 100px;
+}
+
+.main_menu2 .menu2_back{
+    background: #E8EEF8;
+    height: 460px;
+    margin-top: 10px;
+}
+.main_menu2 .menu2_area{
+    display: flex;
+    justify-content: space-between;
+}
+.main_menu2 .menu2_right{
+    display: flex;
+}
+.main_menu2 .menu2_right span{
+    background-color: #E59D9D;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*-------------------------------main_menu3------------------------------------------------------------------------------------------------*/
 .main_menu3 .menu3_image{
-    background: url(./images/R);
+    background: url(./images/Rectangle\ 121.png);
     width: 100%;
     height: 650px;
 }
 .main_menu3 h3, li{
     color: #fff;
+}
+.main_menu3 .main3_area{
+    display:flex;
+    justify-content: space-between;
+}
+.main_menu3 .left1{
+    display: flex;
+    padding: 50px;
+}
+.main_menu3 .main3_content{
+    border: 1px solid #fff;
+    border-radius: 30px 0 30px 0;
+    padding: 25px 25px;
+    width: 635px;
+}
+.main_menu3 ul{
+    display: flex;
+}
+.main_menu3 .left_content{
+    margin-right: 20px;
 }

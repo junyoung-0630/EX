@@ -60,57 +60,86 @@
             </div>
         </section>
         <div class="inner">
-            <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------->
             <section class="main_menu1">
                 <h2>통합조회 시스템으로 한번에 확인하실 수 있습니다</h2>
                 <div class="quick">
                     <ul>
                         <li>
                             <h3>교통정보조회</h3>
-                            <p class="main_icon"><img src="./images/자산 5.png" alt="#"></p>
-                            <p class="text">정보/예보/방송/안전</p>
+                            <div class="button1">
+                                <p class="main_icon"><img src="./images/자산 5.png" alt="#"></p>
+                                <p class="text">정보/예보/방송/안전</p>
+                            </div>
                         </li>
                         <li>
                             <h3>통행료요금조회</h3>
-                            <p class="main_icon"><img src="./images/자산 4.png" alt="#"></p>
-                            <p class="text">미납/통행료/하이패스</p>
+                            <div class="button2">
+                                <p class="main_icon"><img src="./images/자산 4.png" alt="#"></p>
+                                <p class="text">미납/통행료/하이패스</p>
+                            </div>
                         </li>
                         <li>
                             <h3>휴게소</h3>
-                            <p class="main_icon"><img src="./images/자산 3.png" alt="#"></p>
-                            <p class="text">휴게소/주유소/졸음쉼터</p>
+                            <div class="button3">
+                                <p class="main_icon"><img src="./images/자산 3.png" alt="#"></p>
+                                <p class="text">휴게소/주유소/졸음쉼터</p>
+                            </div>
                         </li>
                         <li>
                             <h3>민원신고</h3>
-                            <p class="main_icon"><img src="./images/자산 2.png" alt="#"></p>
-                            <p class="text">불편신고/공익신고/국민소통</p>
+                            <div class="button4">
+                                <p class="main_icon"><img src="./images/자산 2.png" alt="#"></p>
+                                <p class="text">불편신고/공익신고/국민소통</p>
+                            </div>
                         </li>
                     </ul>
                 </div><!--end:.quick-->
             </section><!--end:.main_menu1-->
-            <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------->
             <section class="main_menu2">
                 <h2>EX소식</h2>
-                <nav class="news">
-                    <ul>
-                        <li><a href="#">공지사항</a></li>
-                        <li><a href="#">보도자료</a></li>
-                        <li><a href="#">공개자료</a></li>
-                        <li><a href="#">청렴경영</a></li>
-                    </ul>
-                </nav>
-                <div class="issue">이슈</div>
-                <div class="signal">알림</div>
-                <div class="signa2">알림2</div>
+                <div class="menu2_back">
+                    <div class="menu2_area">
+                        <nav class="news">
+                            <ul>
+                                <input id="notice" type="radio" name="tabs" checked>
+                                <label for="notice"><img src="./images/clock-icon.png" alt="">공지사항</label>
+                                <input id="t1" type="radio" name="tabs">
+                                <label for="t1"><img src="./images/clock-icon.png" alt="">보도자료</label>
+                                <input id="t1" type="radio" name="tabs">
+                                <label for="t1"><img src="./images/clock-icon.png" alt="">공개자료</label>
+                                <input id="t1" type="radio" name="tabs">
+                                <label for="t1"><img src="./images/clock-icon.png" alt="">청렴경영</label>
+                            </ul>
+                        </nav><!--end:.news-->
+                        <div class="menu2_right">
+                            <div class="issue"><span>이슈</span>
+                                <ul>
+                                    <li><img src="./images/issue.png" alt=""></li>
+                                </ul>
+                            </div>
+                            <div class="signal"><span>알림</span>
+                                <ul>
+                                    <li><img src="./images/signal1.png" alt=""></li>
+                                    <li><img src="./images/signal2.png" alt=""></li>
+                                </ul>
+                            </div>
+                        </div><!--end:.menu2_right-->
+                    </div><!--end:.menu2_area-->
+                </div><!--end:.menu2_back-->
             </section><!--end:.main_menu2-->
-            <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------->
             <section class="main_menu3">
                 <h2>고객소통</h2>
                 <div class="menu3_image">
                     <div class="main3_area">
                         <div class="left_data">
-                            <div class="left_content">
-                                <h3>공개자료<img src="./images/자산 10.png" alt=""></h3>
+                            <div class="left1">
+                                <div class="left_content">
+                                    <h3>공개자료</h3>
+                                    <img src="./images/자산 10.png" alt="">
+                                </div><!--end:.left_content-->
                                 <div class="main3_content">
                                     <ul>
                                         <li>•사전공표정보</li>
@@ -120,19 +149,25 @@
                                         <li>•교통통계</li>
                                     </ul>
                                 </div><!--end:.main3_content-->
-                            </div><!--end:.left_content-->
-                            <div class="left_content">
-                                <h3>경영•감사지원<img src="./images/자산 11.png" alt=""></h3>
+                            </div><!--end:.left1-->
+                            <div class="left1">
+                                <div class="left_content">
+                                    <h3>경영•감사지원</h3>
+                                    <img src="./images/자산 11.png" alt="">
+                                </div><!--end:.left_content-->
                                 <div class="main3_content">
                                     <ul>
                                         <li>•수의계약</li>
                                         <li>•자체감사</li>
                                         <li>•사규·재규정</li>
                                     </ul>
-                                </div><!--end:.main3_content-->
-                            </div><!--end:.left_content-->
-                            <div class="left_content">
-                                <h3>청렴•경영<img src="./images/자산 12.png" alt=""></h3>
+                                </div>
+                            </div><!--end:.left1-->
+                            <div class="left1">
+                                <div class="left_content">
+                                    <h3>청렴•경영</h3>
+                                    <img src="./images/자산 12.png" alt="">
+                                </div><!--end:.left_content-->
                                 <div class="main3_content">
                                     <ul>
                                         <li>•청렴자료실</li>
@@ -140,35 +175,35 @@
                                         <li>•부패방지 평가결과</li>
                                     </ul>
                                 </div><!--end:.main3_content-->
-                            </div><!--end:.left_content-->
+                            </div><!--end:.left1-->
                         </div><!--end:.left_data-->
 
                         <div class="right_data">
                             <div class="data">
                                 <ul>
                                     <div class="right_content">
-                                    <li><img src="./images/자산 13.png"></img>
-                                        <h3>건설•기술</h3>
-                                        <p>노선/건설/유지보수/전문시방서</p>
-                                    </li>
+                                        <li><img src="./images/자산 13.png"></img>
+                                            <h3>건설•기술</h3>
+                                            <p>노선/건설/유지보수/전문시방서</p>
+                                        </li>
                                     </div>
                                     <div class="right_content">
-                                    <li><img src="./images/자산 14.png"></img>
-                                        <h3>도로이용</h3>
-                                        <p>도로점용/운행제한</p>
-                                    </li>
+                                        <li><img src="./images/자산 14.png"></img>
+                                            <h3>도로이용</h3>
+                                            <p>도로점용/운행제한</p>
+                                        </li>
                                     </div>
                                     <div class="right_content">
-                                    <li><img src="./images/자산 15.png"></img>
-                                        <h3>사업•기술지원</h3>
-                                        <p>정보공개/증명발급/행정서비스</p>
-                                    </li>
+                                        <li><img src="./images/자산 15.png"></img>
+                                            <h3>사업•기술지원</h3>
+                                            <p>정보공개/증명발급/행정서비스</p>
+                                        </li>
                                     </div>
                                     <div class="right_content">
-                                    <li><img src="./images/자산 16.png"></img>
-                                        <h3>증명•기술</h3>
-                                        <p>민간제안/기술지원/보상안내/계약</p>
-                                    </li>
+                                        <li><img src="./images/자산 16.png"></img>
+                                            <h3>증명•기술</h3>
+                                            <p>민간제안/기술지원/보상안내/계약</p>
+                                        </li>
                                     </div>
                                 </ul>
                             </div><!--end:.data-->
@@ -176,7 +211,7 @@
                     </div><!--end:.main3_area-->
                 </div><!--end:.menu3_image-->
             </section><!--end:.main_menu3-->
-            <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------->
             <section class="main_menu4">
                 <h2>열린경영</h2>
                 <div class="open">
@@ -186,7 +221,9 @@
                     </h3>
                     <ul>
                         <li>
-                            <h4>ESG경영</h4>
+                            <h4>ESG경영
+                                <img src="./images/esg.png" alt="">
+                            </h4>
                             <p>사회적 가치를 실현하고공공성 강화를 위한 공사의 경영 핵심가치</p>
                         </li>
                         <li>
