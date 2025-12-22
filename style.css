@@ -23,6 +23,7 @@ header, main, footer{width: 100%;}
 }
 header h1 img{width: 272px;
 }
+header .logo{margin-bottom: 50px;}
 header .menu_icon{display: flex;
     gap: 10px;
 }
@@ -87,12 +88,14 @@ header .inner li:hover .mega_menu{
 .main_photo .text_area{
     max-width: 1400px;
     position: relative;
+    margin: 0 auto;
+    border: 1px solid #f00;
 }
 .main_photo h2{
     font-weight: bold;
     font-size: 40px;
     position: absolute;
-    left: 260px;
+    left: 0px;
     top: 150px;
     color: #fff;
     text-shadow: 1px 1px 10px #0003;
@@ -102,7 +105,7 @@ header .inner li:hover .mega_menu{
     font-weight: right;
     font-size: 16px;
     position: absolute;
-    left: 260px;
+    left: 0px;
     top: 300px;
     color: #fff;
 }
@@ -127,17 +130,17 @@ header .inner li:hover .mega_menu{
 .main_menu1 .text{
     text-align: center;
     margin-top: 41px;
-    font-size: 14px;
+    font-size: 15px;
     color: #373636;
 }
-.main_menu1 .button1:hover .main_icon{background: url(./images/자산\ 9.png);}
+.main_menu1 .button1:hover .main_icon{background: url(./images/자산\ 9.png); box-shadow: 0 0 10px #0004;}
 .main_menu1 .button1:hover .main_icon img { opacity: 0; transition: all .5s;}
 .main_menu1 .button2:hover .main_icon img { opacity: 0; transition: all .5s;}
 .main_menu1 .button3:hover .main_icon img { opacity: 0; transition: all .5s;}
 .main_menu1 .button4:hover .main_icon img { opacity: 0; transition: all .5s;}
-.main_menu1 .button2:hover .main_icon{background: url(./images/자산\ 8.png);}
-.main_menu1 .button3:hover .main_icon{background: url(./images/자산\ 6.png);}
-.main_menu1 .button4:hover .main_icon{background: url(./images/자산\ 7.png);}
+.main_menu1 .button2:hover .main_icon{background: url(./images/자산\ 8.png); box-shadow: 0 0 10px #0004;}
+.main_menu1 .button3:hover .main_icon{background: url(./images/자산\ 6.png); box-shadow: 0 0 10px #0004;}
+.main_menu1 .button4:hover .main_icon{background: url(./images/자산\ 7.png); box-shadow: 0 0 10px #0004;}
 .main_menu1{
     outline: 2px solid #0f0;
     margin-top: 100px;
@@ -160,19 +163,50 @@ header .inner li:hover .mega_menu{
 .main_menu2{
     margin-top: 100px;
     outline: 2px solid pink;
+    width: 100%;
 }
-
 .main_menu2 .menu2_back{
-    background: #E8EEF8;
+    width: 100%;
     height: 460px;
     margin-top: 10px;
+    margin: 0 auto;
+    background: #E8EEF8;
+    
 }
 .main_menu2 .menu2_area{
     display: flex;
     justify-content: space-between;
+    width: 1400px;
+    
+}
+.main_menu2 .menu2_left input{
+    display: none;
+}
+.main_menu2 .label{
+    display: flex;
+    justify-content: space-between;
+}
+.main_menu2 label{
+    font-size: 19px;
+    font-weight: bold;
+    border-right: 1px solid #858585;
+    
+}
+.main_menu2 label:hover{
+    color: #37679A;
+    font-weight: bold;
+    border-bottom: 5px solid #087A78;
+    
+}
+
+.main_menu2 .menu2_left{
+    outline: 2px solid red;
+    margin-top: 70px;
 }
 .main_menu2 .menu2_right{
     display: flex;
+    outline: 2px solid darkblue;
+    margin-top: 70px;
 }
 .main_menu2 .menu2_right span{
     background-color: #E59D9D;
@@ -181,6 +215,29 @@ header .inner li:hover .mega_menu{
     padding: 10px 30px;
     border-radius: 10px;
 }
+.main_menu2 .menu_right img{
+    width: 350px; height: 250px;
+}
+.menu_right .signal img{
+    width: 370px; height: 130px;
+}
+.main_menu2 .menu2_left li{
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.contents { display: none; }
+.main_menu2 .news label{
+    cursor: pointer;
+}
+.menu2_area .news #news_notice:checked ~ #t1,
+.menu2_area .news #news_press:checked ~ #t2,
+.menu2_area .news #news_open:checked ~ #t3,
+.menu2_area .news #news_clean:checked ~ #t4{display: block;}
+
+
+
 
 
 
@@ -237,8 +294,24 @@ header .inner li:hover .mega_menu{
 .main_menu4{
     outline: 2px solid saddlebrown;
 }
-
-
+.main_menu4 .open{
+    display: flex;
+    justify-content: space-between;
+}
+.main_menu4 ul{
+    display: flex;
+}
+.main_menu4 img{
+    width: 280px; height: 380px;
+}
+.right_grid{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
 
 
 
