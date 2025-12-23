@@ -43,12 +43,12 @@ header .full_menu{
     background: linear-gradient(90deg, #103a83 0%, #00667d 50%, #117a6a 100%);
     height: 97px;
 }
-header .inner ul{
+header .inner .main_menu{
     display: flex; justify-content: space-between;
     font-size: 25px;
     max-width: 1400px;
 }
-header .inner a{
+header .main_menu a{
     color: #fff;
     text-decoration: none;
     line-height: 97px;
@@ -60,19 +60,87 @@ header .inner .mega_menu{
     left: 0;
     width: 100%;
     background: linear-gradient(90deg, #103a83 0%, #00667d 50%, #117a6a 100%);
+    padding: 40px 0;
+    z-index: 20;
 }
-header .inner .sub_menu{
-    max-width: 1400px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    z-index: 9999;
-    padding: 50px 0;
+header .mega_menu a{
+    font-weight: 100;
+    color: #fff;
 }
+header .mega_menu strong{
+    font-weight: bold;
+}
+
 header li a:hover { color: #fff; text-decoration: underline; 
 }
 
-header .inner li:hover .mega_menu{
+/* 대메뉴 스타일 */
+.main_menu {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: 0 auto;
+    height: 97px; /* 헤더 높이 */
+}
+
+.main_menu li {
+    flex: 1; /* 대메뉴들이 동일한 간격을 가짐 */
+    text-align: center;
+}
+
+.main_menu li a {
+    line-height: 97px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* 메가메뉴 판 (숨겨져 있다가 나타남) */
+.mega_menu {
+    display: none; /* 평소엔 숨김 */
+    position: absolute;
+    left: 0;
+    top: 97px; /* 대메뉴 바로 아래에 붙음 */
+    width: 100%;
+    background: linear-gradient(90deg, #103a83 0%, #00667d 50%, #117a6a 100%);
+    padding: 40px 0;
+    z-index: 1000;
+}
+
+/* 서브메뉴 컬럼들을 감싸는 통 */
+.mega_inner {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* ★중요: 서브메뉴 항목들을 세로로 정렬 */
+.sub_column {
+    flex: 1; /* 대메뉴와 동일한 너비를 가짐 */
+    display: flex;
+    flex-direction: column; /* 항목들을 아래로 쌓음 */
+    gap: 15px; /* 항목 간의 위아래 간격 */
+    list-style: none;
+    text-align: center;
+}
+
+.sub_column a {
+    color: #fff;
+    font-size: 16px;
+    line-height: normal; /* 대메뉴의 97px 상속 해제 */
+    text-decoration: none;
+    opacity: 0.8;
+    padding: 0 10px;
+}
+
+.sub_column a:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+/* 마우스 호버 시 보여주기 */
+header:hover .mega_menu {
     display: block;
 }
 
@@ -81,9 +149,10 @@ header .inner li:hover .mega_menu{
 /*------------------------------------------메인메뉴상단-------------------------------------------------------------------------------------*/
 .main_photo{
     border: 1px solid #000;
-    width: auto;
+    width: 100%;
     height: 650px;
     background:url(./images/Rectangle.png)
+    no-repeat
 }
 .main_photo .text_area{
     max-width: 1400px;
@@ -165,6 +234,10 @@ header .inner li:hover .mega_menu{
     outline: 2px solid pink;
     width: 100%;
 }
+.main_menu2 h2{
+    width: 1400px;
+    margin: 0 auto;
+}
 .main_menu2 .menu2_back{
     width: 100%;
     height: 460px;
@@ -179,54 +252,79 @@ header .inner li:hover .mega_menu{
     width: 1400px;
     
 }
-.main_menu2 .menu2_left input{
+.menu2_left input{
     display: none;
 }
-.main_menu2 .label{
-    display: flex;
-    justify-content: space-between;
-}
+
 .main_menu2 label{
     font-size: 19px;
     font-weight: bold;
-    border-right: 1px solid #858585;
+    display: inline-block;
+    padding: 10px;
+    margin-left: 40px;
+    
     
 }
+.main_menu2 input:checked + label,
 .main_menu2 label:hover{
     color: #37679A;
     font-weight: bold;
     border-bottom: 5px solid #087A78;
     
 }
+.menu2_left .left_border{
+    border-bottom: 1px solid black;
+}
 
-.main_menu2 .menu2_left{
+.menu2_left{
     outline: 2px solid red;
     margin-top: 70px;
 }
-.main_menu2 .menu2_right{
+.menu2_left hr{
+    background: #D8D5D5;
+    border: 0;
+    height: 1px;
+}
+.menu2_left li{
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border-bottom: 1px solid black;
+}
+.menu2_right{
     display: flex;
     outline: 2px solid darkblue;
     margin-top: 70px;
 }
-.main_menu2 .menu2_right span{
+.menu2_right ul{
+    position: relative;
+}
+.menu2_right .signal{
+    margin-left: 27px;
+}
+.menu2_right .issue strong{
+    position: absolute;
+    top:10px;
+    left: 10px;
+    font-size: 23px;
+    text-shadow: 3px 3px 4px #0003;
+}
+.menu2_right .signal li{
+    margin-bottom: 19px;
+}
+.menu2_right span{
+    display: inline-block;
+    margin-bottom: 15px;
+}
+.menu2_right span{
     background-color: #E59D9D;
     color: #fff;
     font-weight: bold;
-    padding: 10px 30px;
+    padding: 10px 20px;
     border-radius: 10px;
 }
-.main_menu2 .menu_right img{
-    width: 350px; height: 250px;
-}
-.menu_right .signal img{
-    width: 370px; height: 130px;
-}
-.main_menu2 .menu2_left li{
-    background: #fff;
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-}
+
 .contents { display: none; }
 .main_menu2 .news label{
     cursor: pointer;
@@ -261,22 +359,46 @@ header .inner li:hover .mega_menu{
 /*-------------------------------main_menu3------------------------------------------------------------------------------------------------*/
 .main_menu3{
     outline: 2px solid yellow;
+    margin-top: 100px;
 }
 .main_menu3 .menu3_image{
     background: url(./images/Rectangle\ 121.png);
     width: 100%;
     height: 650px;
 }
-.main_menu3 h3, li{
+.main_menu3 .left_data{
+    outline: 1px solid greenyellow;
+    width: 800px;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.main_menu3 .left_data li{
+    padding: 10px;
+    white-space: nowrap;
+}
+.main_menu3 h3{
     color: #fff;
+    font-size: 20px;
+}
+.main_menu3 li{
+    font-size: 17px;
+    color:#fff;
 }
 .main_menu3 .main3_area{
     display:flex;
     justify-content: space-between;
+    height: 100%;
+}
+.main_menu3 .left_content{
+    width: 20%;
+    text-align: center;
 }
 .main_menu3 .left1{
     display: flex;
-    padding: 50px;
+    padding: 0 50px;
+    outline: 1px solid red;
 }
 .main_menu3 .main3_content{
     border: 1px solid #fff;
@@ -290,9 +412,43 @@ header .inner li:hover .mega_menu{
 .main_menu3 .left_content{
     margin-right: 20px;
 }
+.main_menu3 .right_content ul{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 94px;
+    padding-left: 53px;
+    width: 100%;
+    
+}
+.main_menu3 data{
+    margin: 0 auto;
+}
+.main_menu3 .right_content li{
+    padding: 10px;
+}
+
+.main_menu3 .right_content a{
+    display: block;
+}
+
+.right_content .rb1:hover{background: url(./images/Group\ 81-1.png); box-shadow: 0 0 10px #0003;}
+.right_content .rb2:hover{background: url(./images/Group\ 82-1.png); box-shadow: 0 0 10px #0003;}
+.right_content .rb3:hover{background: url(./images/Group\ 83-1.png); box-shadow: 0 0 10px #0003;}
+.right_content .rb4:hover{background: url(./images/Group\ 84-1.png); box-shadow: 0 0 10px #0003;}
+
+
+
+
+
+
+
+
+
+
 /*-------------------------------main_menu4------------------------------------------------------------------------------------------------*/
 .main_menu4{
     outline: 2px solid saddlebrown;
+    height: 900px;
 }
 .main_menu4 .open{
     display: flex;
@@ -304,14 +460,51 @@ header .inner li:hover .mega_menu{
 .main_menu4 img{
     width: 280px; height: 380px;
 }
-.right_grid{
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 24px;
+.main_menu4 .open_card{
+    margin-top: 43px;
 }
+
+.main_menu4 .open .lead{
+    font-size: 33px;
+    font-weight: 600;
+}
+.main_menu4 .open_text .text1{
+    color: #134290;
+}
+.main_menu4 .open_text .text2{
+    color: #0e7c78
+}
+.main_menu4 .right_card{
+    position: relative;
+}
+.main_menu4 .card_text{
+    position: absolute;
+    top: 290px;
+    color: #fff;
+    font-weight: 200;
+    font-size: 11px;
+    left: 10px;
+}
+.main_menu4 .card_text h4{
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
