@@ -12,6 +12,10 @@
         href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
 
     <link rel="stylesheet" href="style.css">
+
+    <script src="./js/EzenScrollClass.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -91,12 +95,43 @@
 
     <main>
         <section id="main_view">
-            <div class="main_photo">
-                <div class="text_area">
+            <div id="main_photo" class="swriper">
+                <ul class="swiper-wrapper">
+                    <li class="swiper-slide"><img src="./images/Rectangle.png" alt="">
+                        <h1>한국도로공사는 모든 이동의<br> 시작을 안전에서 엽니다.</h1>
+                        <p>정밀한 도로 관리와 지속적인 안전 인프라 개선을 통해<br> 국민이 안심하고 달릴 수 있는 길을 만들어 가고 있습니다.</p>
+                    </li>
+                    <li class="swiper-slide"><img src="./images/main_photo2.png" alt="">
+                        <h1>한국도로공사는 도로 위의<br> 모든 흐름을,데이터로 읽습니다</h1>
+                        <p>도로 위에서 발생하는 모든 정보를 실시간으로 분석해<br> 교통 흐름을 예측하고 선제적으로 대응합니다.<br> 국민의 이동은 더 빠르고, 더 정확하며, 더 안전한
+                            방향으로 나아갑니다
+                        </p>
+                    </li>
+                    <li class="swiper-slide"><img src="./images/main_photo3.png" alt="">
+                        <h1>한국도로공사는 길의 환경까지,<br>책임지고 관리합니다.</h1>
+                        <p>도로 주변의 환경을 세심하게 살피고<br> 자연 훼손을 최소화하는 설계와 관리로 지속 가능한 도로 환경을 조성합니다.<br>깨끗한 길은 곧 미래 세대를 위한
+                            약속입니다.</p>
+                    </li>
+                    <li class="swiper-slide"><img src="./images/main_photo4.png" alt="">
+                        <h1>한국도로공사는 길 위의 안전과 편안함이 <br>일상의 행복으로 이어지도록 만들어갑니다.</h1>
+                        <p>길 위의 모든 순간이편안한 기억이 되도록,<br>한국도로공사는 오늘도 길을 잇습니다.</p>
+                    </li>
+                </ul>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
 
-                    <h1>한국도로공사는 모든 이동의<br> 시작을 안전에서 엽니다.</h1>
-                    <p>정밀한 도로 관리와 지속적인 안전 인프라 개선을 통해<br> 국민이 안심하고 달릴 수 있는 길을 만들어 가고 있습니다.</p>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
 
+                <div class="progress">
+                    <ul>
+                        <li>Safety</li>
+                        <li>Smart</li>
+                        <li>Clean</li>
+                        <li>Happiness</li>
+                    </ul>
+                    <div class="bar"><span><img src="./images/Subtract.png" alt=""></span></div>
                 </div>
             </div>
         </section>
@@ -405,13 +440,116 @@
 
     <footer>
         <section class="footer_back">
-        <div class="inner">
+            <div class="inner">
+                <div class="footer_left">
+                    <div class="footer_logo">
+                        <img src="./images/footerlogo.png" alt="">
+                    </div>
+                    <div class="footer_text">
+                        <h4>한국도로공사</h4>
+                        <p>우) 39660 경상북도 김천시 혁신8로 77(율곡동, 한국도로공사)</p>
+                    </div>
+                </div>
+                <div class="footer_right">
+                    <div class="go">
+                        <button>한국도로공사 관련 사이트+</button>
+                        <button>민자고속도로 바로가기+</button>
+                    </div>
+                    <div class="go_logo">
+                        <a href="#"><img src="./images/bloglogoblack.png" alt=""></a>
+                        <a href="#"><img src="./images/facebooklogoblack.png" alt=""></a>
+                        <a href="#"><img src="./images/instalogoblack.png" alt=""></a>
+                        <a href="#"><img src="./images/youtubelogoblack.png" alt=""></a>
+                    </div>
+                    <div class="call">
+                        <span>24시간 콜센터</span>
+                        <b>1588-2504</b>
+                    </div>
+                </div>
 
 
-        </div><!--end:.inner-->
+
+            </div><!--end:.inner-->
+        </section>
+        <section class="footer_back2">
+            <div class="inner">
+            <a href="#"><b>개인정보처리방침</b></a>
+            <a href="#">개인위치정보처리방침</a>
+            <a href="#">영상기기 운영관리방침</a>
+            <a href="#">이메일 집단 수신거부</a>
+            </div>
+
         </section>
 
     </footer>
+
+
+
+    <script>
+        var open_plugin = new EzenScrollClass(".open_card", {
+            class: "show",
+            markers: true,
+            baseline: "middle",
+        });
+
+        const progress_span= document.querySelector(".progress span");
+
+        const swiper = new Swiper('#main_photo', {
+            loop: true,
+            effect: "fade",
+
+            autoplay: {
+                delay: 2500, //밀리초단위=2.5초
+                disableOnInteraction: false,
+            },
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                type: "fraction",
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+
+            on: {
+                autoplayTimeLeft(s, time, percent) {
+                    var slide_w = 100/s.slides.length-1;
+                    var i = slide_w*(1-percent)+(slide_w*s.realIndex)+"%";
+                    progress_span.style.setProperty("--progress", i);
+
+                }
+            }
+        });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
 
 </body>
 
